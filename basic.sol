@@ -1,4 +1,4 @@
-pragma solidity 0.4.24;
+pragma solidity >=0.8.0;
 
 contract AssemblyTest {
     uint256[] d = [1, 2, 3, 4];
@@ -82,11 +82,4 @@ contract AssemblyTest {
     // => 그러기 때문에 비싸다.
 
     // 하지만 mload, mstore는 메모리 단계에서 관리를 하기 떄문에 저렴하다??는 장점이 있다.
-
-    function sendEth(address _to, uint256 _amount) external payable {}
-
-    address[] owners = [
-        0x5B38Da6a701c568545dCfcB03FcB875f56beddC4,
-        0xAb8483F64d9C6d1EcF9b849Ae677dD3315835cb2
-    ];
 }
